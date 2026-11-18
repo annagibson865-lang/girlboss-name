@@ -1,7 +1,7 @@
 # PROJECT BRIEF
 
 ## Me and my domain
-Staff accountant at a mid-sized public accounting firm (firm name withheld). MBA student in data analytics. This project is for a class presentation; the repository is private. Made-up data is allowed if labelled.
+Staff accountant at a mid-sized public accounting firm (firm name withheld). MBA student in data analytics. This is a class project; the repository is public, as the course requires. Made-up data is allowed if labelled.
 
 ## The situation (anonymised)
 Before the firm performs a review, compilation or audit for a prospective nonprofit client, it needs to know whether taking the client on could pose a risk to the firm's reputation. Public IRS records can be used to check the prospective client before the firm accepts it. The example client is fictional and based in New York, one of the 8 states covered by eo1.csv (illustrative).
@@ -45,7 +45,7 @@ Blanks are kept separate from zeros.
 - **Deadline:** Tuesday, November 24, 2026 (course deadline).
 - **Tools:** Python's csv module for the counts. Excel is possible for a demonstration if the course allows it.
 - **AI and client data:** The course allows AI use; the project instructions require it. Firm AI rules are UNKNOWN. The prototype uses only public IRS records and fictional intake details labelled illustrative. No real client intake forms, financial statements or internal acceptance notes go into AI tools unless their use is explicitly authorised.
-- **Presentation:** The repository is private. Made-up data is allowed for the presentation and is labelled illustrative. Includes the method, aggregate counts, a sample AI output with fictional intake details (labelled illustrative) and a link to the IRS source. Excludes the raw IRS CSV (eo1.csv), real client records, internal firm procedures and actual acceptance decisions.
+- **Presentation:** The repository is public (course requirement). Made-up data is allowed for the presentation and is labelled illustrative. Includes the method, aggregate counts, a sample AI output with fictional intake details (labelled illustrative) and a link to the IRS source. Excludes the raw IRS CSV (eo1.csv), real client records, internal firm procedures and actual acceptance decisions.
 
 ## What a hiring manager should conclude
 That I can take a real accounting problem, verify the data, and build a practical tool that helps an engagement partner make a better-informed decision. And that I know where AI can save time and where professional judgment matters.
