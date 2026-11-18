@@ -41,7 +41,7 @@ Blanks are kept separate from zeros.
 - **Deadline:** Tuesday, November 24, 2026 (course deadline).
 - **Tools:** Python's csv module for the counts. Excel is possible for a demonstration if the course allows it.
 - **AI and client data:** The course allows AI use; the project instructions require it. Firm AI rules are UNKNOWN. The prototype uses only public IRS records and fictional intake details labelled illustrative. No real client intake forms, financial statements or internal acceptance notes go into AI tools unless their use is explicitly authorised.
-- **Public portfolio:** Includes the method, aggregate counts, a sample AI output with fictional intake details (labelled illustrative) and a link to the IRS source. Excludes the raw CSV, real client records, internal firm procedures and actual acceptance decisions.
+- **Public portfolio:** Includes the method, aggregate counts, a sample AI output with fictional intake details (labelled illustrative) and a link to the IRS source. Excludes the raw IRS CSV (eo1.csv), real client records, internal firm procedures and actual acceptance decisions.
 
 ## What a hiring manager should conclude
 That I can take a real accounting problem, verify the data, and build a practical tool that helps an engagement partner make a better-informed decision. And that I know where AI can save time and where professional judgment matters.
@@ -50,6 +50,8 @@ That I can take a real accounting problem, verify the data, and build a practica
 - Firm rules on AI use.
 - Whether firm policy requires risk or quality lead approval in this case.
 - Whether an engagement partner would agree with the job to be done (not yet confirmed by anyone in the role).
+- By when the engagement partner must decide on the pilot.
+- Whether the partner's real question (in The job to be done) is about accepting a client or about approving the pilot.
 
 ## Public-safe check
 - **Data choice:** Option (c). Public IRS records plus fictional intake details, labelled illustrative. (I first chose (a); I corrected that to (c).)
