@@ -10,7 +10,8 @@ The raw CSV is not included in this repository. Download it from the link above.
 Intake details used in examples are fictional and labelled illustrative.
 
 ## Files
-- `project-brief.md`: project brief
+- [`case/project-brief.md`](https://github.com/annagibson865-lang/gmba634-term-project/blob/main/case/project-brief.md): project brief
+- [`ai-component/project-instructions.md`](https://github.com/annagibson865-lang/gmba634-term-project/blob/main/ai-component/project-instructions.md): the standing instructions I gave my AI assistant
 - `counts.py`: counts records, distinct EINs and blank/zero amounts. Run: `python counts.py eo1.csv`
 - `pilot_scenarios_illustrative.csv`: 10 fictional intake scenarios for the pilot (times and catches blank until the pilot is run)
 - `lookup.py`: exact EIN lookup that flags name, exemption-type and state differences. Run: `python lookup.py eo1.csv pilot_scenarios_illustrative.csv`
@@ -22,4 +23,4 @@ Intake details used in examples are fictional and labelled illustrative.
 The lookup has been run on the 10 illustrative scenarios. The pilot times in pilot_results_illustrative.csv are **made up** for the class presentation (the course allows made-up data); they were not measured. With those illustrative times: median 187.5 s manual vs 109.5 s AI-assisted, no material discrepancies missed.
 
 ## AI use
-Claude (Anthropic) interviewed me to structure the project brief, wrote counts.py, lookup.py and pilot_summary.py, drafted the 10 illustrative scenarios and generated the made-up illustrative pilot times. The ask, hypothesis, reversal sentence and decisions are mine. I have not yet re-run the scripts myself.
+This is a class project, not paid, employer or client work. Claude (Anthropic) interviewed me to structure the project brief, wrote counts.py, lookup.py and pilot_summary.py, drafted the 10 illustrative scenarios and generated the made-up illustrative pilot times. The ask, hypothesis, reversal sentence and decisions are mine. I have not yet re-run the scripts myself.
