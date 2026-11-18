@@ -12,6 +12,13 @@ Intake details used in examples are fictional and labelled illustrative.
 ## Files
 - `project-brief.md`: project brief
 - `counts.py`: counts records, distinct EINs and blank/zero amounts. Run: `python counts.py eo1.csv`
+- `pilot_scenarios_illustrative.csv`: 10 fictional intake scenarios for the pilot (times and catches blank until the pilot is run)
+- `lookup.py`: exact EIN lookup that flags name, exemption-type and state differences. Run: `python lookup.py eo1.csv pilot_scenarios_illustrative.csv`
+- `lookup_results.csv`: output of `lookup.py` on the 10 scenarios
+- `pilot_summary.py`: medians and the reversal test once the pilot times are filled in. Run: `python pilot_summary.py pilot_scenarios_illustrative.csv`
+
+## Status
+The lookup has been run on the 10 illustrative scenarios. The pilot (manual vs AI-assisted timing) has not been run yet, so there are no time results.
 
 ## AI use
-Claude (Anthropic) interviewed me to structure the project brief and wrote counts.py; I re-ran the script, checked the counts, and own the content and decisions.
+Claude (Anthropic) interviewed me to structure the project brief, wrote counts.py, lookup.py and pilot_summary.py, and drafted the 10 illustrative scenarios. The ask, hypothesis, reversal sentence and decisions are mine. I have not yet re-run the scripts myself.
