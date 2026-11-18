@@ -9,10 +9,13 @@ Before the firm performs a review, compilation or audit for a prospective nonpro
 ## Who decides, and what
 The engagement partner decides whether to approve a limited pilot of the AI-assisted IRS records check for prospective nonprofit clients. In the pilot, staff will compare the manual and AI-assisted workflows on 10 fictional intake scenarios. The engagement partner retains responsibility for accepting, deferring, or declining individual clients.
 
+- **By when (Claude's assumption, illustrative, not confirmed):** Before the firm signs its next engagement letter with a prospective nonprofit client.
+
 ## The job to be done (how I know)
 *My guess, not confirmed by them. I have not spoken to an engagement partner; this is my own assumption.*
 - **Their real question:** "Do we have enough information to accept this nonprofit as a client, or is there something we need to resolve first?"
 - **What they already know:** The nonprofit's name, what it does, the service requested and its deadline. They may also have its EIN, most recent financial statements or Form 990.
+- **Their question about the pilot (Claude's inference from my hypothesis, not confirmed):** "Will this check save staff time without missing anything that matters?"
 - **Their time:** 30–60 minutes of staff and partner time combined for a straightforward acceptance review (my planning estimate; firms vary). The IRS lookup is one small step within it, about 2–5 minutes (my estimate). Elapsed time can be several business days while waiting on documents, clarification or approval.
 
 ## Data I can use
@@ -25,8 +28,9 @@ Source: eo1.csv, a public IRS Exempt Organizations Business Master File extract 
 | Records with STATE = PA | 0 | Measured by me |
 | ASSET_AMT blank / zero | 58,305 / 101,537 | Measured by me |
 | REVENUE_AMT blank / zero | 82,236 / 104,263 | Measured by me |
-| Client assets and revenue, with TAX_PERIOD | — | Planned |
-| Exact EIN match and name check | — | Planned (needs a fictional client's EIN and name) |
+| Exact EIN match, name and exemption-type check | Built in lookup.py; run on the 10 illustrative scenarios: all 4 designed material discrepancies flagged, plus 2 minor name differences | Run by Claude; I still need to re-run it |
+| Client assets and revenue, with TAX_PERIOD | In lookup_results.csv for each matched scenario | Run by Claude; I still need to re-run it |
+| Manual vs AI-assisted time and catches | — | Planned (pilot not yet timed) |
 
 Blanks are kept separate from zeros.
 
@@ -50,8 +54,8 @@ That I can take a real accounting problem, verify the data, and build a practica
 - Firm rules on AI use.
 - Whether firm policy requires risk or quality lead approval in this case.
 - Whether an engagement partner would agree with the job to be done (not yet confirmed by anyone in the role).
-- By when the engagement partner must decide on the pilot.
-- Whether the partner's real question (in The job to be done) is about accepting a client or about approving the pilot.
+- The pilot deadline and the partner's pilot question are Claude's assumptions, not confirmed.
+- The 10 scenarios and which discrepancies count as material were drafted by Claude; I need to confirm them before timing the pilot.
 
 ## Public-safe check
 - **Data choice:** Option (c). Public IRS records plus fictional intake details, labelled illustrative. (I first chose (a); I corrected that to (c).)
@@ -66,3 +70,5 @@ That I can take a real accounting problem, verify the data, and build a practica
 I’d run both workflows on 10 fictional intake scenarios using public IRS records. I’d time each check from lookup through final review, including time spent verifying and correcting the AI output. I’d define material discrepancies before testing, such as an EIN tied to a different organization or a conflicting exemption classification. The 10 cases are a proposed pilot size, and the time savings are still unmeasured.
 
 **How I’ll document the test:** I’ll save a CSV in the repository with one row per scenario, the time in seconds for each workflow, the expected discrepancies, and which discrepancies each workflow caught. The AI-assisted time will include verification and corrections. I’ll calculate the medians from that file once the test is run.
+
+**Pilot files:** pilot_scenarios_illustrative.csv (10 fictional intake scenarios using public IRS records; times and catches blank until I run the pilot), lookup.py (the exact EIN check), lookup_results.csv (its output) and pilot_summary.py (medians and the reversal test, once the times are filled in).
