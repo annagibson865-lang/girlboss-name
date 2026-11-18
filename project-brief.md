@@ -7,10 +7,7 @@ Staff accountant at a mid-sized public accounting firm (firm name withheld). MBA
 Before the firm performs a review, compilation or audit for a prospective nonprofit client, it needs to know whether taking the client on could pose a risk to the firm's reputation. Public IRS records can be used to check the prospective client before the firm accepts it. The example client is fictional and based in New York, one of the 8 states covered by eo1.csv (illustrative).
 
 ## Who decides, and what
-- **Decider (role):** The prospective engagement partner. Approval from the firm's risk or quality management lead is needed if firm policy requires it.
-- **Decision:** Accept the engagement, defer it while gathering information or resolving concerns, or decline it.
-- **By when:** Before the firm signs the engagement letter or begins engagement work.
-- **One action:** The partner records accept, defer or decline after reviewing the IRS check and the follow-up.
+The engagement partner decides whether to approve a limited pilot of the AI-assisted IRS records check for prospective nonprofit clients. In the pilot, staff will compare the manual and AI-assisted workflows on 10 fictional intake scenarios. The engagement partner retains responsibility for accepting, deferring, or declining individual clients.
 
 ## The job to be done (how I know)
 *My guess, not confirmed by them. I have not spoken to an engagement partner; this is my own assumption.*
@@ -65,3 +62,5 @@ That I can take a real accounting problem, verify the data, and build a practica
 - **Reversal sentence:** I’d recommend keeping the check manual if the AI-assisted workflow takes as long as or longer than the manual workflow at the median, or if it misses even one material discrepancy.
 
 I’d run both workflows on 10 fictional intake scenarios using public IRS records. I’d time each check from lookup through final review, including time spent verifying and correcting the AI output. I’d define material discrepancies before testing, such as an EIN tied to a different organization or a conflicting exemption classification. The 10 cases are a proposed pilot size, and the time savings are still unmeasured.
+
+**How I’ll document the test:** I’ll save a CSV in the repository with one row per scenario, the time in seconds for each workflow, the expected discrepancies, and which discrepancies each workflow caught. The AI-assisted time will include verification and corrections. I’ll calculate the medians from that file once the test is run.
