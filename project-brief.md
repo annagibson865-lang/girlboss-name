@@ -59,7 +59,9 @@ That I can take a real accounting problem, verify the data, and build a practica
 - **Withheld:** No real names, employers or clients. One earlier abbreviation is withheld.
 - **Columns:** ICO (in-care-of) names and STREET addresses stay out of public outputs.
 
-## My ask, claim and reversal sentence (I add these later)
-- **Ask:**
-- **Claim:**
-- **Reversal sentence:**
+## My ask, hypothesis and reversal sentence
+- **Ask:** Should the engagement partner approve a pilot of an AI-assisted IRS records check for prospective nonprofit clients?
+- **Hypothesis:** An exact EIN lookup paired with an AI-generated summary will reduce the median time staff spend checking the IRS record and drafting any needed follow-up questions compared with a fully manual check, while catching all material discrepancies built into the test cases.
+- **Reversal sentence:** I’d recommend keeping the check manual if the AI-assisted workflow takes as long as or longer than the manual workflow at the median, or if it misses even one material discrepancy.
+
+I’d run both workflows on 10 fictional intake scenarios using public IRS records. I’d time each check from lookup through final review, including time spent verifying and correcting the AI output. I’d define material discrepancies before testing, such as an EIN tied to a different organization or a conflicting exemption classification. The 10 cases are a proposed pilot size, and the time savings are still unmeasured.
