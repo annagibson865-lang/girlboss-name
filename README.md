@@ -10,8 +10,8 @@ The raw CSV is not included in this repository. Download it from the link above.
 Intake details used in examples are fictional and labelled illustrative.
 
 ## Files
-- `case/project-brief.md`: project brief
-- `scripts/counts.py`: counts records, distinct EINs and blank/zero amounts. Run: `python scripts/counts.py eo1.csv`
+- `project-brief.md`: project brief
+- `counts.py`: counts records, distinct EINs and blank/zero amounts. Run: `python counts.py eo1.csv`
 
 ## AI use
-Claude (Anthropic) interviewed me to structure the project brief and wrote scripts/counts.py; I re-ran the script, checked the counts, and own the content and decisions.
+Claude (Anthropic) interviewed me to structure the project brief and wrote counts.py; I re-ran the script, checked the counts, and own the content and decisions.
