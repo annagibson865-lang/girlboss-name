@@ -1,7 +1,7 @@
 # PROJECT BRIEF
 
 ## Me and my domain
-Staff accountant at a mid-sized public accounting firm (firm name withheld). MBA student in data analytics. My portfolio will be public.
+Staff accountant at a mid-sized public accounting firm (firm name withheld). MBA student in data analytics. This project is for a class presentation; the repository is private. Made-up data is allowed if labelled.
 
 ## The situation (anonymised)
 Before the firm performs a review, compilation or audit for a prospective nonprofit client, it needs to know whether taking the client on could pose a risk to the firm's reputation. Public IRS records can be used to check the prospective client before the firm accepts it. The example client is fictional and based in New York, one of the 8 states covered by eo1.csv (illustrative).
@@ -30,7 +30,7 @@ Source: eo1.csv, a public IRS Exempt Organizations Business Master File extract 
 | REVENUE_AMT blank / zero | 82,236 / 104,263 | Measured by me |
 | Exact EIN match, name and exemption-type check | Built in lookup.py; run on the 10 illustrative scenarios: all 4 designed material discrepancies flagged, plus 2 minor name differences | Run by Claude; I still need to re-run it |
 | Client assets and revenue, with TAX_PERIOD | In lookup_results.csv for each matched scenario | Run by Claude; I still need to re-run it |
-| Manual vs AI-assisted time and catches | — | Planned (pilot not yet timed) |
+| Manual vs AI-assisted time and catches | Made-up for the presentation in pilot_results_illustrative.csv: median 187.5 s manual vs 109.5 s AI-assisted; no material discrepancies missed | ILLUSTRATIVE, not measured |
 
 Blanks are kept separate from zeros.
 
@@ -45,7 +45,7 @@ Blanks are kept separate from zeros.
 - **Deadline:** Tuesday, November 24, 2026 (course deadline).
 - **Tools:** Python's csv module for the counts. Excel is possible for a demonstration if the course allows it.
 - **AI and client data:** The course allows AI use; the project instructions require it. Firm AI rules are UNKNOWN. The prototype uses only public IRS records and fictional intake details labelled illustrative. No real client intake forms, financial statements or internal acceptance notes go into AI tools unless their use is explicitly authorised.
-- **Public portfolio:** Includes the method, aggregate counts, a sample AI output with fictional intake details (labelled illustrative) and a link to the IRS source. Excludes the raw IRS CSV (eo1.csv), real client records, internal firm procedures and actual acceptance decisions.
+- **Presentation:** The repository is private. Made-up data is allowed for the presentation and is labelled illustrative. Includes the method, aggregate counts, a sample AI output with fictional intake details (labelled illustrative) and a link to the IRS source. Excludes the raw IRS CSV (eo1.csv), real client records, internal firm procedures and actual acceptance decisions.
 
 ## What a hiring manager should conclude
 That I can take a real accounting problem, verify the data, and build a practical tool that helps an engagement partner make a better-informed decision. And that I know where AI can save time and where professional judgment matters.
@@ -71,4 +71,4 @@ I’d run both workflows on 10 fictional intake scenarios using public IRS recor
 
 **How I’ll document the test:** I’ll save a CSV in the repository with one row per scenario, the time in seconds for each workflow, the expected discrepancies, and which discrepancies each workflow caught. The AI-assisted time will include verification and corrections. I’ll calculate the medians from that file once the test is run.
 
-**Pilot files:** pilot_scenarios_illustrative.csv (10 fictional intake scenarios using public IRS records; times and catches blank until I run the pilot), lookup.py (the exact EIN check), lookup_results.csv (its output) and pilot_summary.py (medians and the reversal test, once the times are filled in).
+**Pilot files:** pilot_scenarios_illustrative.csv (10 fictional intake scenarios using public IRS records; times and catches blank until I run the pilot), lookup.py (the exact EIN check), lookup_results.csv (its output), pilot_summary.py (medians and the reversal test) and pilot_results_illustrative.csv (made-up times for the presentation, labelled illustrative; not measured).
